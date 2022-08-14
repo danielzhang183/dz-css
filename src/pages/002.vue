@@ -157,8 +157,10 @@ onMounted(async () => {
 })
 </script>
 
-<template lang='pug'>
-paper
-  .box.overflow-hidden(@click='f.start' style='border-color: #592A2A')
-    canvas(ref='el' width='400' height='400')
+<template>
+  <Paper>
+    <div box overflow-hidden style="border-color: #592A2A" @click="f.start">
+      <canvas ref="el" width="400" height="400" />
+    </div>
+  </Paper>
 </template>
