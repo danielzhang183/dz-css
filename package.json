@@ -15,17 +15,18 @@
   },
   "dependencies": {
     "@vueuse/core": "^9.1.0",
+    "lodash-es": "^4.17.21",
     "vue": "^3.2.37",
     "vue-router": "^4.1.3"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.26.1",
     "@iconify-json/carbon": "^1.1.7",
+    "@types/lodash-es": "^4.17.6",
     "@unocss/reset": "^0.45.6",
     "@vitejs/plugin-vue": "^3.0.3",
     "@vueuse/router": "^9.1.0",
     "eslint": "^8.21.0",
-    "pug": "^3.0.2",
     "stylus": "^0.59.0",
     "taze": "^0.7.6",
     "typescript": "^4.6.4",

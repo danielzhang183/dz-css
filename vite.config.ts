@@ -7,6 +7,13 @@ import Unocss from 'unocss/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  optimizeDeps: {
+    include: [
+      '@vueuse/core',
+      '@vueuse/router',
+      'lodash-es',
+    ],
+  },
   plugins: [
     vue(),
 

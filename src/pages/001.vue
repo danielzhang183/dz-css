@@ -1,4 +1,4 @@
-<script setup='props' lang='ts'>
+<script setup lang='ts'>
 import { useRafFn } from '@vueuse/core'
 import { useRouteQuery } from '@vueuse/router'
 import { onMounted, ref, watch } from 'vue'
@@ -57,6 +57,7 @@ onMounted(async () => {
     steps = []
 
     if (!prevSteps.length) {
+      // eslint-disable-next-line @typescript-eslint/no-use-before-define
       controls.pause()
       stopped.value = true
     }
@@ -125,9 +126,3 @@ onMounted(async () => {
     <p><b>len</b> - max length for each branch.</p>
   </Note>
 </template>
-
-<!-- <template>
-<Paper>
-  <div></div>
-</Paper>
-</template> -->

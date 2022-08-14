@@ -34,7 +34,7 @@ useTitle(work ? `${no}. ${work.name}` : '404')
 </script>
 
 <template>
-  <div class="paper" :class="[shot]">
+  <div paper :class="[shot]">
     <div v-if="work" class="bottom-nav" font-mono flex z-10>
       <div class="nav-links">
         <router-link v-if="prev" class="prev link" :to="`/${prev.no}`">
@@ -59,7 +59,7 @@ useTitle(work ? `${no}. ${work.name}` : '404')
 
     <div v-if="!shot && !hideFrame" class="nav" font-mono>
       <router-link
-        class="link"
+        link
         text-xl block pt-1 i-carbon-chevron-left
         to="/"
       />

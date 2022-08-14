@@ -37,7 +37,7 @@ const active = ref(false)
 
       <br>
 
-      <a class="link" mr-3 :href="`https://github.com/antfu/dz-css/blob/main/src/pages/${no}.vue`">
+      <a link mr-3 :href="`https://github.com/antfu/dz-css/blob/main/src/pages/${no}.vue`">
         source
       </a>
     </div>

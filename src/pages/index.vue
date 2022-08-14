@@ -5,8 +5,11 @@ const avaliable_works = works.filter(i => !i.draft)
 </script>
 
 <template>
-  <div class="paper">
-    <div class="centered index-page">
+  <div paper>
+    <div
+      centered max-h-full w-full md:w-auto
+      p="~ t-[60px] r-[40px] b-[30px] l-[40px]"
+    >
       <h1 text-lg font-bold mb-4>
         DZ CSS
       </h1>
@@ -16,8 +19,7 @@ const avaliable_works = works.filter(i => !i.draft)
           v-for="work in avaliable_works"
           :key="work.no"
           :to="`/${work.no}`"
-          flex mr-4
-          class="link"
+          flex mr-4 link
         >
           <span mr-2 opacity-50>{{ work.no }}</span>
           <b>{{ work.name }}</b>
