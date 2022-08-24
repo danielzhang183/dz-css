@@ -57,13 +57,31 @@ useTitle(work ? `${no}. ${work.name}` : '404')
       </div>
     </div>
 
-    <div v-if="!shot && !hideFrame" class="nav" font-mono>
+    <nav
+      v-if="!shot && !hideFrame"
+      class="nav"
+      font-mono text-xl pt-1
+      flex items-center justify-between
+    >
       <router-link
-        link
-        text-xl block pt-1 i-carbon-chevron-left
+        link block i-carbon-chevron-left
         to="/"
       />
-    </div>
+
+      <div inline-flex gap-2>
+        <button link @click="toggleDark()">
+          <div dark:i-carbon-moon i-carbon-sun />
+        </button>
+
+        <a
+          link i-carbon-logo-github
+          rel="noreferrer"
+          href="https://github.com/danielzhang183/dz-css"
+          target="_blank"
+          title="GitHub"
+        />
+      </div>
+    </nav>
 
     <slot :work="work" />
   </div>

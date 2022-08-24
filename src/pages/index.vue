@@ -5,6 +5,7 @@ const avaliable_works = works.filter(i => !i.draft)
 </script>
 
 <template>
+  <Plum />
   <div paper>
     <div
       centered max-h-full w-full md:w-auto

@@ -10,6 +10,7 @@ declare module '@vue/runtime-core' {
     Footer: typeof import('./src/components/Footer.vue')['default']
     Note: typeof import('./src/components/Note.vue')['default']
     Paper: typeof import('./src/components/Paper.vue')['default']
+    Plum: typeof import('./src/components/Plum.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

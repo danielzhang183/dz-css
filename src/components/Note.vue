@@ -15,14 +15,14 @@ const active = ref(false)
       fixed text-center
       border="~ gray-200"
       text="~ center gray-400"
-      bg="~ white opacity-50"
+      hover="~ bg-white opacity-50 dark:bg-black"
       @click="active = true"
     >
       i
     </div>
     <div
       class="modal-bg"
-      bg-black
+      bg-black dark:bg-white-50
       fixed top-0 left-0 bottom-0 right-0
       @click="active = false"
     />
@@ -31,7 +31,8 @@ const active = ref(false)
       class="content"
       border="~ gray-200"
       fixed bottom-0
-      bg-white shadow p8
+      bg="~ white dark:black"
+      shadow p8
     >
       <slot />
 

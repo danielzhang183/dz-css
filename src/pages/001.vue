@@ -71,7 +71,7 @@ onMounted(async () => {
     iterations = 0
     ctx.clearRect(0, 0, width, height)
     ctx.lineWidth = 1
-    ctx.strokeStyle = '#00000040'
+    ctx.strokeStyle = '#88888825'
     prevSteps = []
     steps = random() < 0.5
       ? [
